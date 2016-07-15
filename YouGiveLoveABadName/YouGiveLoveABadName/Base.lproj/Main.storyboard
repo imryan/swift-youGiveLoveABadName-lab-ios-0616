@@ -25,21 +25,31 @@
                                     <action selector="expandButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRQ-aU-fBn"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bonjovi" translatesAutoresizingMaskIntoConstraints="NO" id="2mK-Ph-zer">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonjovi" translatesAutoresizingMaskIntoConstraints="NO" id="2mK-Ph-zer">
                                 <rect key="frame" x="0.0" y="145" width="600" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="FbO-Kv-Eey"/>
+                                    <constraint firstAttribute="height" constant="310" id="x51-Ty-1LS"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2mK-Ph-zer" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="N20-tr-8Lx"/>
                             <constraint firstItem="LEJ-XM-6d9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGh-Wo-Sbh"/>
-                            <constraint firstItem="2mK-Ph-zer" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VN4-6m-ALd"/>
+                            <constraint firstItem="2mK-Ph-zer" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QRo-7l-TmI"/>
                             <constraint firstItem="LEJ-XM-6d9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-20" id="aSQ-Gu-O0M"/>
+                            <constraint firstItem="2mK-Ph-zer" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bIu-lI-ThH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="LEJ-XM-6d9" id="bZP-Ug-osO"/>
+                        <outlet property="imageView" destination="2mK-Ph-zer" id="0aM-w3-1PN"/>
+                        <outlet property="topHeightConstraint" destination="x51-Ty-1LS" id="B9q-kg-jqv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="385" y="365"/>
         </scene>
     </scenes>
     <resources>
